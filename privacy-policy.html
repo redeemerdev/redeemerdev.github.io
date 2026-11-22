@@ -7,7 +7,7 @@
   <title>Privacy Policy — My Memory Verse</title>
   <meta
     name="description"
-    content="Privacy Policy for My Memory Verse on Android, including Google Sign-In, Firebase, leaderboards, and the optional monthly subscription."
+    content="Privacy Policy for My Memory Verse on Android, including Google Sign-In, Firebase, leaderboards, and cloud synchronization."
   />
   <meta name="theme-color" content="#1E1A1F" />
 
@@ -16,7 +16,7 @@
   <meta property="og:title" content="Privacy Policy — My Memory Verse" />
   <meta
     property="og:description"
-    content="Privacy Policy for My Memory Verse on Android, including Google Sign-In, Firebase, leaderboards, and the optional monthly subscription."
+    content="Privacy Policy for My Memory Verse on Android, including Google Sign-In, Firebase, leaderboards, and cloud synchronization."
   />
   <meta property="og:url" content="https://redeemerdev.github.io/privacy-policy.html" />
   <meta property="og:image" content="https://redeemerdev.github.io/assets/mmv/icon.png" />
@@ -82,14 +82,14 @@
         <p>
           This Privacy Policy explains how My Memory Verse, an Android application published by
           Redeemer Dev, collects, uses, and retains information. It describes the current
-          application, version 2.1.0. Last updated November 15, 2026.
+          application, version 3.0.0. Last updated November 22, 2026.
         </p>
         <div class="mmv-legal-callout">
           <strong>We respect your privacy.</strong>
           <p>
             My Memory Verse uses information to sign you in, save and sync your verses, support
-            the community and public leaderboards, understand app usage, and manage the optional
-            subscription. The app does not show advertisements.
+            the community and public leaderboards, and understand app usage. The app does not
+            show advertisements and does not sell a subscription.
           </p>
         </div>
       </div>
@@ -98,7 +98,7 @@
     <section class="section mmv-legal-body" aria-labelledby="info-we-use-title">
       <div class="section-heading mmv-legal-heading" style="margin-bottom: 8px;">
         <h2 id="info-we-use-title">Information We Use</h2>
-        <p>These practices apply to My Memory Verse on Android, version 2.1.0.</p>
+        <p>These practices apply to My Memory Verse on Android, version 3.0.0.</p>
       </div>
 
       <article class="mmv-legal-card" id="google-sign-in">
@@ -154,15 +154,14 @@
           Favorites, memorization streaks, and practice statistics may be stored on your device.
           When you are signed in, My Memory Verse can synchronize Favorites, custom Bible verses,
           and memorization streaks to Cloud Firestore so they can be restored with your account.
-          Practice statistics are included in that cloud synchronization when Premium Monthly
-          is active.
+          Practice statistics are included in that cloud synchronization when you are signed in.
         </p>
         <p>Cloud synchronization may include:</p>
         <ul>
           <li>Favorites</li>
           <li>Custom Bible verses saved to your account</li>
           <li>Memorization streaks, including the current streak, best streak, and last read date</li>
-          <li>Practice statistics, when Premium Monthly is active</li>
+          <li>Practice statistics, when you are signed in</li>
         </ul>
         <p>
           Signing out does not delete this information. Uninstalling the app does not delete
@@ -174,8 +173,8 @@
         <h2>Public leaderboards</h2>
         <p>
           My Memory Verse offers public weekly and all-time leaderboards for qualifying
-          practice results. Submitting a score requires Google Sign-In and an active Premium
-          Monthly subscription. Other users of that feature may see your community username,
+          practice results. Submitting a score requires Google Sign-In. It does not require a
+          subscription. Other users of that feature may see your community username,
           score, and a completion time when the mode records one. The entry is stored with
           your account user ID. Avatar IDs appear with community verses; they are not a
           separate leaderboard field.
@@ -242,26 +241,17 @@
       </article>
 
       <article class="mmv-legal-card" id="subscription">
-        <h2>Google Play Billing and Premium Monthly</h2>
+        <h2>No in-app purchases</h2>
         <p>
-          My Memory Verse offers an optional auto-renewing monthly subscription, Premium Monthly,
-          listed at &#8369;59 per month. The purchase is processed by Google Play Billing.
+          Version 3.0.0 does not sell a subscription or any other in-app purchase. The app does
+          not use Google Play Billing and does not offer Restore Purchases.
         </p>
         <p>
-          Redeemer Dev does not receive or store your payment card number or full billing
-          details. Google may provide purchase status, such as whether Premium Monthly is active,
-          so the app can unlock Premium features and support Restore Purchases.
-        </p>
-        <p>
-          Premium Monthly renews automatically each month through Google Play until you cancel
-          it. The price charged is the price Google Play displays when you confirm the purchase,
-          and applicable taxes or regional pricing are determined by Google Play.
-        </p>
-        <p>
-          Deleting your My Memory Verse account does not cancel this subscription. You can manage
-          or cancel it in Google Play. See the
-          <a href="terms-of-service.html#subscription">subscription terms</a>
-          for payment, renewal, cancellation, and Restore Purchases.
+          If you subscribed in an earlier version, Google Play may still renew that subscription
+          until you cancel it in Google Play. Redeemer Dev does not receive or store your payment
+          card number or full billing details. Deleting your My Memory Verse account does not
+          cancel an earlier subscription. See the
+          <a href="terms-of-service.html#subscription">terms for earlier subscriptions</a>.
         </p>
       </article>
 
@@ -275,7 +265,6 @@
           <li>Show community verses and public leaderboards</li>
           <li>Review reports and support local blocking</li>
           <li>Maintain memorization streaks and practice statistics</li>
-          <li>Confirm an active Premium Monthly subscription and restore purchases</li>
           <li>Understand app usage through Firebase Analytics</li>
           <li>Protect the service from abuse and spam</li>
           <li>Respond to support and account-deletion requests</li>
@@ -286,7 +275,8 @@
         <h2>Who receives information</h2>
         <p>
           My Memory Verse uses these Google services to operate the app: Google Sign-In,
-          Firebase Authentication, Cloud Firestore, Firebase Analytics, and Google Play Billing.
+          Firebase Authentication, Cloud Firestore, and Firebase Analytics. Version 3.0.0 does
+          not use Google Play Billing.
           Those providers process information under their own terms and privacy policies,
           including Google&rsquo;s
           <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
@@ -323,8 +313,9 @@
         <p>
           Report records are kept as needed to review the report and protect the community.
           Firebase Analytics information is retained according to Firebase retention settings.
-          Google may keep Play Billing records under Google&rsquo;s own policies after an account
-          is deleted. Emails you send us are kept as needed to verify the request, complete
+          If you purchased a subscription in an earlier version, Google may keep those Play
+          Billing records under Google&rsquo;s own policies after an account is deleted. Emails
+          you send us are kept as needed to verify the request, complete
           deletion, and keep a record of the support request.
         </p>
       </article>
@@ -332,15 +323,17 @@
       <article class="mmv-legal-card" id="deletion">
         <h2>Account deletion</h2>
         <p>
-          Account deletion is not currently available inside the application. To ask for deletion,
-          email
+          Signed-in users can request account deletion from inside the app. The app opens the
+          <a href="delete-account.html">Delete Account</a>
+          page. You can also email
           <a href="mailto:mymemoryverseapp@gmail.com">mymemoryverseapp@gmail.com</a>
           and include the Google account email associated with My Memory Verse.
         </p>
         <p>
-          The developer manually verifies the request and then manually reviews and deletes
-          associated Firebase records. Requests are processed within a reasonable period.
-          Deleting an account does not automatically cancel a Google Play subscription.
+          Opening that page does not by itself delete the account. The developer manually
+          verifies the request and then manually reviews and deletes associated Firebase records.
+          Requests are processed within a reasonable period. If you subscribed in an earlier
+          version, deleting an account does not cancel that Google Play subscription.
         </p>
         <p>
           The full process is explained on the
@@ -353,15 +346,16 @@
         <h2>Your choices</h2>
         <ul>
           <li>Sign in with Google only if you choose to use features that require an account.</li>
-          <li>Choose whether to share a community verse. Submitting a public leaderboard score requires Google Sign-In and an active Premium Monthly subscription.</li>
+          <li>Choose whether to share a community verse. Submitting a public leaderboard score requires Google Sign-In and does not require a subscription.</li>
           <li>Block another user locally on your device.</li>
-          <li>Cancel Premium Monthly in Google Play if you do not want the subscription to renew.</li>
-          <li>Request manual account deletion by email, as described on the Delete Account page.</li>
+          <li>If you subscribed in an earlier version, cancel that subscription in Google Play if you do not want it to renew.</li>
+          <li>Request account deletion from inside the app, or by email, as described on the Delete Account page.</li>
           <li>Clear information stored only on your device through your device settings.</li>
         </ul>
         <p>
-          Uninstalling My Memory Verse removes the local app, but it does not delete cloud data
-          and it does not cancel an active Google Play subscription.
+          Uninstalling My Memory Verse removes the local app, but it does not delete cloud data.
+          If you subscribed in an earlier version, uninstalling does not cancel that Google Play
+          subscription.
         </p>
       </article>
 
@@ -382,9 +376,9 @@
           No method of transmission or storage is completely secure.
         </p>
         <p>
-          Google Firebase and Google Play may process information on servers outside the country
-          where you live. Their infrastructure is used to provide authentication, cloud storage,
-          analytics, and billing status for the app.
+          Google Firebase may process information on servers outside the country where you live.
+          That infrastructure is used to provide authentication, cloud storage, and analytics.
+          Google Play may still process an earlier subscription under Google&rsquo;s own terms.
         </p>
       </article>
 
@@ -392,7 +386,7 @@
         <h2>Changes to this policy</h2>
         <p>
           If this policy changes, the updated version will be posted on this page with a new
-          &ldquo;Last updated&rdquo; date. This version describes Android application version 2.1.0.
+          &ldquo;Last updated&rdquo; date. This version describes Android application version 3.0.0.
         </p>
       </article>
 
