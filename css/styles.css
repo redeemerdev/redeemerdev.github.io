@@ -457,10 +457,6 @@ main {
   font-weight: 700;
 }
 
-.hero-line-break {
-  display: none;
-}
-
 .hero-description {
   max-width: 34rem;
   color: var(--muted);
@@ -2739,12 +2735,6 @@ body.mmv-legal-page .footer-links a[aria-current="page"] {
 
 /* ===== Fine-tuned phone breakpoints ===== */
 
-@media (max-width: 520px) {
-  .hero-line-break {
-    display: inline;
-  }
-}
-
 @media (max-width: 480px) {
   :root {
     --header-h: 68px;
@@ -2865,7 +2855,7 @@ body.mmv-legal-page .footer-links a[aria-current="page"] {
   }
 
   .hero h1 {
-    font-size: clamp(2rem, 11vw, 2.6rem);
+    font-size: clamp(1.7rem, 8.2vw, 2.05rem);
   }
 
   .page-hero h1 {
@@ -2904,7 +2894,10 @@ body.mmv-legal-page .footer-links a[aria-current="page"] {
     padding-right: 12px;
   }
 
-  .hero h1,
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+
   .page-hero h1 {
     font-size: 1.85rem;
   }
