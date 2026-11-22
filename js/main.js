@@ -86,6 +86,29 @@
     }
   });
 
+  const revealTargets = document.querySelectorAll("[data-reveal]");
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (revealTargets.length && !reduceMotion) {
+    document.documentElement.classList.add("js");
+    const pending = new Set(revealTargets);
+    const revealReached = () => {
+      const line = window.innerHeight * 0.92;
+      pending.forEach((el) => {
+        if (el.getBoundingClientRect().top < line) {
+          el.classList.add("is-in");
+          pending.delete(el);
+        }
+      });
+      if (pending.size) return;
+      window.removeEventListener("scroll", revealReached);
+      window.removeEventListener("resize", revealReached);
+    };
+    revealReached();
+    window.addEventListener("scroll", revealReached, { passive: true });
+    window.addEventListener("resize", revealReached, { passive: true });
+  }
+
   const initShotGallery = (gallery) => {
     const track = gallery.querySelector("[data-track]");
     const viewport = gallery.querySelector("[data-viewport]");
